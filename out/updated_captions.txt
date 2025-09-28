@@ -1,0 +1,14 @@
+=== Updated Figure Captions ===
+
+Figure 1 — Simulated annualized Sharpe:
+Annualized Sharpe under a common covariance-uncertainty model. Vertical lines mark P5, P50, and P95. Covariance is perturbed via shrinkage-to-diagonal (alpha), volatility scaling (s), and correlation dampening (rho). Latin Hypercube; fixed seed. Metric defined as k/σ_p with k = 0.25% monthly risk premium (3% annual).
+
+Figure 2 — Sharpe vs Robustness frontier:
+Mean annualized Sharpe vs robustness, where robustness is the standard deviation of the simulated metric under the same uncertainty. All strategies share the same long-only bounds, weight cap, turnover and cost model. ±SD shown under each point.
+
+Figure 3 — Out-of-sample drawdowns:
+Monthly drawdowns for each strategy over 36-month out-of-sample period. Drawdown calculated as (NAV - Peak) / Peak.
+
+=== Results Summary ===
+Under identical uncertainty, the robust portfolio improves mean risk-adjusted performance without widening dispersion. Sensitivity analysis attributes most variance to the shrinkage intensity on correlations. Risk-parity character is preserved, with the largest single-asset risk-share deviation at 7.8%.
+

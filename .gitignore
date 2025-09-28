@@ -1,0 +1,31 @@
+# R specific
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.vscode/
+.idea/
+
+# Large data files (optional - uncomment if needed)
+# data/*.csv
+# out/*.csv
+
+# Keep important output files
+!out/fig_*.png
+!out/*_summary.csv
+!out/*_diagnostic.csv
+!out/risk_configuration.txt
+!out/final_captions.txt

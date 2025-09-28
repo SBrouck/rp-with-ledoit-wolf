@@ -1,0 +1,9 @@
+Sheet,Cell,Formula,Description
+Sigma_input,A1,=COVAR(returns),Covariance matrix input
+Sigma_input,B1,=MEAN(returns),Mean returns input
+Params,A1,=RiskBeta(2,6),Alpha parameter
+Params,B1,=RiskLognorm(0,0.1),Scale parameter
+Params,C1,=RiskUniform(0.7,1),Rho parameter
+Weights,A1,=SUM(w_rng),Portfolio weights
+RiskCalc,A1,=SQRT(MMULT(MMULT(TRANSPOSE(w_rng),Sigma_star),w_rng)),Portfolio volatility
+RiskCalc,B1,=MMULT(TRANSPOSE(w_rng),mu_in)/A1,Sharpe ratio

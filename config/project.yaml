@@ -1,0 +1,24 @@
+# Robust Risk Parity Portfolio Configuration
+# Author: Sacha Brouck, MSBA (UW Foster)
+# Project: Robust Risk Parity under Covariance Uncertainty
+
+# Asset universe - diversified ETF portfolio
+tickers: ["SPY","TLT","LQD","HYG","GLD","DBC","VNQ","IWM","EFA","EEM"]
+
+# Data date range
+from: "2010-01-01"
+to: null            # use Sys.Date() if null
+
+# Portfolio rebalancing
+rebalance: "month"  # endpoints
+est_window_days: 504  # 2-year rolling window for covariance estimation
+
+# Portfolio constraints
+w_max: 0.30         # maximum weight per asset
+turnover_limit: 0.25  # maximum monthly turnover
+
+# Transaction costs
+cost_bps: 2.5       # basis points per trade
+
+# Reproducibility
+seed: 20251001      # random seed for all simulations

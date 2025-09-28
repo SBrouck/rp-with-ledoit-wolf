@@ -1,0 +1,20 @@
+=== @RISK Configuration ===
+
+**Seed**: 20251001 (fixed for reproducibility)
+
+**Parameter Ranges**:
+- α (shrinkage intensity): Beta(2,6) → [0, 1] with mean ≈ 0.25
+- s (volatility scaling): LogNormal(0, 0.10) → [0.7, 1.4] with mean ≈ 1.0
+- ρ (correlation dampening): Uniform(0.7, 1.0) → [0.7, 1.0] with mean = 0.85
+
+**Simulation Settings**:
+- Method: Latin Hypercube sampling
+- Iterations: 5,000
+- Seed: 20251001 (fixed)
+- Objective: Maximize P5(Sharpe) where Sharpe = k/σ_p, k = 0.25% monthly
+
+**Constraints**:
+- Long-only: 0 ≤ w_i ≤ 0.30
+- Budget: Σ w_i = 1
+- Turnover: Σ |w_i,t - w_i,t-1| ≤ 0.25
+
