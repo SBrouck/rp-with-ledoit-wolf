@@ -19,9 +19,12 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Large data files (optional - uncomment if needed)
-# data/*.csv
-# out/*.csv
+# Large data files - exclude to keep repo size manageable
+data/*.csv
+out/risk_results*.csv
+out/oos_rebuilt.csv
+out/weights_timeline.csv
+robust_riskparity_for_chatgpt.zip
 
 # Keep important output files
 !out/fig_*.png
@@ -29,3 +32,5 @@ Thumbs.db
 !out/*_diagnostic.csv
 !out/risk_configuration.txt
 !out/final_captions.txt
+!out/evolver_weights.csv
+!out/latest_*.csv
