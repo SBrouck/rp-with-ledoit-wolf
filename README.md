@@ -238,8 +238,8 @@ All metrics are calculated out-of-sample with proper transaction costs and reali
 
 Sacha Brouck  
 MSBA Candidate, University of Washington Foster School of Business  
-Email: [contact information]  
-LinkedIn: [profile link]
+Email: sbrouck@uw.edu I sachabrou@gmail.com  
+LinkedIn: https://www.linkedin.com/in/sacha-brouck/
 
 ---
 
