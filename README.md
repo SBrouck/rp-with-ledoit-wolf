@@ -1,8 +1,3 @@
-# Robust Risk Parity under Covariance Uncertainty
-
-**Author:** Sacha Brouck, MSBA (UW Foster)  
-**Project:** Portfolio-grade quantitative analysis demonstrating rigorous methods, reproducibility, and practical decision-making under uncertainty.
-
 ## Project Overview
 
 This project implements a robust risk parity allocation strategy that maintains stability when the covariance matrix is uncertain. The approach combines:
